@@ -20,7 +20,19 @@ int main(int argc, char *argv[]) {
 	m = (x + y + z) / 3;
 	
 	// print
-	printf("y = %d, m = %d", y, m);
+	printf("y = %d, m = %d\n", y, m);
+	
+	// relational/logical operator precedence
+	x = 3;
+	int cond1, cond2; 
+	
+	// true
+	cond1 = (2 < x) && (x < 5);
+	
+	// true
+	cond2 = (x > 1) || ((x < 4) && (x > 3));
+	
+	printf("cond1 = %d, cond2 = %d\n", cond1, cond2);
 		
 	return 0;
 }
